@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Sidebar container */
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light gray background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-family: sans-serif; /* Use a sans-serif font */
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.sidebar-header h2 {
+  color: #333; /* Dark gray text color */
+  font-size: 20px;
+}
+
+/* Sidebar text */
+.sidebar-text {
+  margin-bottom: 20px;
+  color: #666; /* Light gray text color */
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Sidebar links */
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 10px;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: #000; /* Black text color */
+  font-size: 16px;
+}
+
+.sidebar-links a:hover {
+  color: #333; /* Dark gray hover color */
+}
+
+/* Logout button */
+#logout-button {
+  background-color: transparent;
+  border: none;
+  color: #333; /* Dark gray text color */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: #666; /* Light gray text color */
+  font-size: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+          <img src="logo.png" alt="Codinglab Logo">
+          <h2>Dashcount</h2>
+        </div>
+        <ul class="sidebar-links">
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Wallets</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><button id="logout-button">Logout</button></li>
+        </ul>
+      </div>
+      
+</body>
+</html>
