@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .super{
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            padding: 10px;
+            grid-template-rows:repeat(2,1fr);
+        }
+        .child{
+            border:2px solid black;
+            margin: 10px;
+            text-align: center;
+            height: 350px;
+        }
+        @media (max-width:900px) {
+            .super{
+                grid-template-columns: repeat(3,1fr);
+            }
+            
+        }
+        @media (max-width:600px) {
+            .super{
+                grid-template-columns: repeat(1,1fr);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="super">
+        <div class="child">
+            <h2>ONE</h2>
+        </div>
+        <div class="child">
+            <h2>TWO</h2>
+        </div>
+        <div class="child">
+            <h2>THREE</h2>
+        </div>
+        <div class="child">
+            <h2>FOUR</h2>
+        </div>
+        <div class="child">
+            <h2>FIVE</h2>
+        </div>
+    </div>
+</body>
+</html>
