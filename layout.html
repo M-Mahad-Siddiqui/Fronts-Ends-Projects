@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header '
+    'menu main main '
+    'menu ad1 ad2 '
+    'footer footer footer';
+    margin: 50px;
+    max-width: 1200px;
+    height: 70vh;
+    text-align: center;
+    grid-gap: 2px;
+    margin: 100px auto;
+}
+
+.header { grid-area: header; background-color: rgb(18, 119, 84);}
+.menu { grid-area: menu;  background-color: rgb(43, 113, 89); }
+.main { grid-area: main;  background-color: rgb(103, 199, 165);}
+.ad1 { grid-area: ad1;  background-color: rgb(18, 160, 110); }
+.ad2 { grid-area: ad2; background-color:  rgb(18, 160, 110);;}
+.footer { grid-area: footer;background-color:  rgb(8, 98, 67);; }
+
+/* Style each element for better visualization */
+.grid-container > div {
+  padding: 40px;
+  border: 1px solid #0ad4e3;
+  font-size: larger;
+  font-weight: bolder;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 'header''menu''main''ad1''ad2''footer';
+        grid-gap: 2px;
+        margin: 70px 50px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main</div>
+        <div class="ad1">Ad1</div>
+        <div class="ad2">Ad2</div>
+        <div class="footer">Footer</div>
+      </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        max-width: 1000px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 0px auto;
+        display: grid;
+        /* grid-template-columns: 33.3% 33.3% 33.4%; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, minmax(50px, 100px));
+        gap: 5px;
+        text-align: center;
+      }
+
+      .parent > div {
+        /* height: 40px; */
+        border: 1px solid black;
+        justify-content: center;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+
+      .one {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: aqua;
+      }
+
+      .two {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .three {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      .six {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      @media (max-width: 700px) {
+        .parent {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, minmax(100px, 200px));
+        }
+      }
+
+      @media (max-width: 500px) {
+        .parent {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, minmax(100px, 200px));
+        }
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="one"><span>Header</span></div>
+      <div class="two"><span>Siderbar</span></div>
+      <div class="three"><span>three</span></div>
+      <div class="four"><span>four </span></div>
+      <div class="five"><span>five</span></div>
+      <div class="six"><span>six</span></div>
+    </div>
+  </body>
+</html> -->
