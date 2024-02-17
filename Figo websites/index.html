@@ -26,6 +26,21 @@
     .nav-item {
       margin-right: 50px;
     }
+    .food {
+      border-radius: 100px;
+      height: 230px;
+      width: 230px;
+      align-items: center;
+    }
+    .first_list a:hover {
+      border-left: 3px;
+      background: rgb(115, 171, 115);
+      border-radius: 5px;
+    }
+    .roll{
+      height: 300px;
+      border-radius: 5px;
+    }
   </style>
   <body>
     <script
@@ -83,7 +98,7 @@
         <!-- -----------1--------------- -->
         <div class="col-12 col-lg-6 display-2 fw-normal pt-5">
           All in Good Taste Food With Figo.
-          <p class="lead fw-normal mt-4">
+          <p class="lead fw-normal mt-4 lh-lg">
             Lorem ipsum dolor eius dolorum minima libero dolorem quam sint
             molestias dolor iste rerum porro dolore obcaecati delectus neque.
             Corporis.
@@ -121,12 +136,12 @@
           <p class="lead fw-normal mt-4 text-warning fw-medium">Welcome</p>
           Welcome to Figo <br />
           Restaurant
-          <p class="lead fw-normal mt-4">
+          <p class="lead fw-normal mt-4 lh-lg">
             Lorem ipsum dolor eius dolorum minima libero dolorem quam sint
             molestias dolor iste rerum porro dolore obcaecati delectus neque.
             Corporis.
           </p>
-          <p class="lead fw-normal mt-4">
+          <p class="lead fw-normal mt-4 lh-lg">
             Lorem ipsum dolor eius dolorum minima libero dolorem quam sint
             molestias dolor iste rerum porro dolore obcaecati delectus neque.
             Corporis.
@@ -144,72 +159,278 @@
       </div>
 
       <p class="lead fw-medium mt-4 text-center text-warning">Reason</p>
-      <p class="text-center fw-medium fs-1 mb-5 ">Why Choose Us?</p>
+      <p class="text-center fw-medium fs-1 mb-5">Why Choose Us?</p>
 
       <div class="row">
         <!-- ---------------1--------------- -->
-        <div class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex">
-          <div class="card py-3" style="width: 24rem; ">
+        <div
+          class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card py-3" style="width: 24rem;">
             <i
               class="fa-solid fa-menorah fa-5x justify-content-center d-flex mt-4 text-success"
             ></i>
             <div class="card-body text-center">
               <h5 class="card-title">Various Menus</h5>
-              <p class="card-text">
+              <p class="card-text lh-lg">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
             </div>
           </div>
         </div>
-          <!-- ---------------2--------------- -->
-          <div class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex">
-            <div class="card py-3" style="width: 24rem; ">
-              <i
-                class="fa-solid fa-truck fa-5x justify-content-center d-flex mt-4 text-success"
-              ></i>
-              <div class="card-body text-center">
-                <h5 class="card-title">Pocket Friendly Delivery </h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+        <!-- ---------------2--------------- -->
+        <div
+          class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card py-3" style="width: 24rem;">
+            <i
+              class="fa-solid fa-truck fa-5x justify-content-center d-flex mt-4 text-success"
+            ></i>
+            <div class="card-body text-center">
+              <h5 class="card-title">Pocket Friendly Delivery</h5>
+              <p class="card-text lh-lg">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
-            <!-- ---------------3--------------- -->
-        <div class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex">
-            <div class="card py-3" style="width: 24rem; ">
-              <i
-                class="fa-solid far fas fa-envelope-open-text fa-5x justify-content-center d-flex mt-4 text-success"
-              ></i>
-              <div class="card-body text-center">
-                <h5 class="card-title">Best Offers</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+        </div>
+        <!-- ---------------3--------------- -->
+        <div
+          class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card py-3" style="width: 24rem;">
+            <i
+              class="fa-solid far fas fa-envelope-open-text fa-5x justify-content-center d-flex mt-4 text-success"
+            ></i>
+            <div class="card-body text-center">
+              <h5 class="card-title">Best Offers</h5>
+              <p class="card-text lh-lg">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
-          </div>    
+          </div>
+        </div>
       </div>
 
       <p class="lead fw-medium mt-4 text-center text-warning">Browse</p>
-      <p class="text-center fw-medium fs-1 mb-5 ">Explore our Menu</p>
+      <p class="text-center fw-medium fs-1 mb-5">Explore our Menu</p>
+
+      <div class="row">
+        <!-- ---------------0--------------- -->
+        <div
+          class="col-12 col-lg-3 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card" style="width: 20rem;">
+            <div class="card-body text-center first_list">
+              <p>
+                <a
+                  class="text-decoration-none lead fw-medium align-items-end ms-4 d-flex text-success"
+                  href="#"
+                  >Breafast</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-decoration-none lead fw-medium align-items-end ms-4 d-flex text-success"
+                  href="#"
+                  >Lunch</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-decoration-none lead fw-medium align-items-end ms-4 d-flex text-success"
+                  href="#"
+                  >Dinner</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-decoration-none lead fw-medium align-items-end ms-4 d-flex text-success"
+                  href="#"
+                  >Desert</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-decoration-none lead fw-medium align-items-end ms-4 d-flex text-success"
+                  href="#"
+                  >Soups</a
+                >
+              </p>
+              <p>
+                <a
+                  class="text-decoration-none lead fw-medium align-items-end ms-4 d-flex text-success"
+                  href="#"
+                  >Drinks</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------------1--------------- -->
+        <div
+          class="col-12 col-lg-3 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card" style="width: 20rem;">
+            <img
+              class="img-fluid food mx-auto mt-3"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYQbT0LyKNrWMqTYoSXrxqrHJMZD67bAta_AVH8vuUire-uFtPJjnzaJx8aHQg676cEg&usqp=CAU"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Chicken Massola</h5>
+              <p class="card-text"></p>
+              <p class="card-text text-success fw-bold">
+                $100
+                <span class="text-dark"
+                  ><small class="text-decoration-line-through">20</small></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------------2--------------- -->
+        <div
+          class="col-12 col-lg-3 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card" style="width: 20rem;">
+            <img
+              class="img-fluid food mx-auto mt-3"
+              src="https://foodiesterminal.com/wp-content/uploads/2020/03/instant-pot-tandoori-chicken-2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Chicken Massola</h5>
+              <p class="card-text"></p>
+              <p class="card-text text-success fw-bold">
+                $100
+                <span class="text-dark"
+                  ><small class="text-decoration-line-through">20</small></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------3--------------- -->
+        <div
+          class="col-12 col-lg-3 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card" style="width: 20rem;">
+            <img
+              class="img-fluid food mx-auto mt-3"
+              src="https://cdn.veeg.co/app/uploads/2019/03/01221458/Veggie_Sandwich_WIth_Cashew_Parm_07_web_square.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Chicken Massola</h5>
+              <p class="card-text"></p>
+              <p class="card-text text-success fw-bold">
+                $100
+                <span class="text-dark"
+                  ><small class="text-decoration-line-through">20</small></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <!-- -----------1--------------- -->
+        <div class="col-12 col-lg-6 display-2 fw-normal pt-5">
+          We Cook Tradition & Family Recipes
+          <p class="lead fw-normal mt-4 lh-lg">
+            Lorem ipsum dolor eius dolorum minima libero dolorem quam sint
+            molestias dolor iste rerum porro dolore obcaecati delectus neque.
+            Lorem ipsum dolor eius dolorum minima libero dolorem quam sint
+            molestias dolor iste rerum porro dolore obcaecati delectus neque.
+            <br /><br />
+            Lorem ipsum dolor eius dolorum minima libero dolorem quam sint
+            molestias dolor iste rerum porro dolore obcaecati delectus neque.
+          </p>
+          <div class="d-flex">
+            <button class="btn btn-success btn-lg ms-3 fs-3">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- ------------2-------------- -->
+        <div class="col-12 col-lg-6">
+          <img class="img-fluid" src="Capture.PNG" alt="" />
+        </div>
+      </div>
+
+      <p class="lead fw-medium mt-4 text-center text-warning">News</p>
+      <p class="text-center fw-medium fs-1 mb-5">Latest News</p>
 
       <div class="row">
         <!-- ---------------1--------------- -->
-        <div class="col-12 col-lg-3  mt-lg-0 justify-content-sm-center d-sm-flex">
-            <div class="card" style="width: 20rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+        <div
+          class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card " style="width: 24rem;">
+            <img class="roll" src="https://www.foodandwine.com/thmb/hvnI7RURjp3PZ_UqnwlZuYie5Y8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/masala-paneer-kathi-rolls-FT-RECIPE0520-1-e51be7861c5042b787dad72fbdeee931.jpg" alt="">
+            <div class="card-body ">
+              <h5 class="card-title">Spain Appetizes</h5>
+              <p class="card-text lh-lg">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="lead fw-bold text-warning">Read More</p>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------2--------------- -->
+        <div
+          class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card " style="width: 24rem;">
+            <img class="roll" src="https://i.ytimg.com/vi/4vKiaay10EQ/maxresdefault.jpg" alt="">
+            <div class="card-body ">
+              <h5 class="card-title">Pocket Friendly Delivery</h5>
+              <p class="card-text lh-lg">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="lead fw-bold text-warning">Read More</p>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------3--------------- -->
+        <div
+          class="col-12 col-lg-4 mt-3 mt-lg-0 justify-content-sm-center d-sm-flex"
+        >
+          <div class="card " style="width: 24rem;">
+            <img class="roll" src="https://www.culinaryhill.com/wp-content/uploads/2018/05/Vietnamese-Spring-Rolls-Culinary-Hill-square-e1580268224663.jpg" alt="">
+            <div class="card-body ">
+              <h5 class="card-title">Best Offers</h5>
+              <p class="card-text lh-lg">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="lead fw-bold text-warning">Read More</p>
+            </div>
+          </div>
+        </div>
       </div>
+     <div class="container">
+      <form class="w-50 mx-auto mt-5 text-center">
+        <div class="mb-3 ">
+          <p class="lead text-warning fw-normal">Subscribe</p>
+          <label for="exampleInputEmail1" class="form-label" placeholder sfd>Wants to Gets Updates</label>
+          <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter Your Address"  aria-describedby="emailHelp">
+        </div>
+      </form>
 
+     </div>
+     
     </div>
   </body>
 </html>
