@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            justify-content: center;
+            border: none;
+            padding: 12px;
+            gap: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .main{
+            max-width: 1000px;
+            border: 2px solid salmon ;
+            margin: 5% auto;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(3,2fr);
+            gap: 12px;
+            
+        }
+        .child{
+            border: 2px solid blueviolet;
+            padding: 80px;
+           
+         
+        }
+    </style>
+</head>
+<body>    
+<!-- <button class="button">Button</button> -->
+
+<div class="main">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+</div>
+
+</body>
+</html>
