@@ -1,30 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .blue{
+            background: rgb(52, 52, 233);
+            color: aliceblue;
+            padding: 20px 200px  ;
+            padding-bottom: 110px;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight:bold;
+            font-size: larger;
+        
+        }
+        .logo>h2{
+            font-size: xxx-large;
+        }
+        .logo > div{
+            display: flex;
+            align-items: center;
+        }
+        .btn{
+            padding:9px 17px ;
+            color: blue;
+            border-radius: 5px;
+            border: none;
+        }
+        .logo > div>p,button{
+            margin-left: 30px;
+        }
+/* -------------------------------------------- */
+.stay{
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+    font-size: large;
+    font-weight: bold;
+}
+.stay>p{
+    margin-right: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 20px;
+
+}
+.stay>p:first-child{
+    border: 1px solid white ;
+
+}
+.stay>p:hover{
+    background-color: rgb(106, 106, 206);
+}
+/* ------------------------------------------- */
+.main{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.txt{
+    font-size: xx-large;
+    padding-right: 200px;
+}
+.txt>b{
+    font-size:60px;
+}
+.txt>button{
+    background-color: rgb(86, 86, 192);
+    color: aliceblue;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+    </style>
 </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <div class="fluid bg-primary p-2 ">
-        <div class="container">
-            <div class="text-white ">
-                <div class="logo">
-                    <p class="lead fs-3 fw-bold  px-5 ">Booking.com</p>
-                </div>
-                <div>
-                    <button class=" btn text-white fw-bold ">PKR</button>
-                    <button class="btn"><img height="30" src="united-states-of-america.png" alt=""></button>
-                    <button class="btn text-white fs-3 "><i class="fa-regular fa-circle-question"></i></button>
-                </div>
-            </div>
+<body>
+   <div class="blue">
+    <div class="logo">
+        <h2>booking.com</h2>
+        <div>
+            <p>PKR</p>
+        <button><img height="30" src="united-states-of-america.png" alt=""></button>
+        <button><i class="fa-regular fa-circle-question"></i></button>
+        <p>List your property</p>
+        <button class="btn">Register</button>
+        <button class="btn">sign in</button>
         </div>
-
+    </div>
+    <div class="stay">
+        <p>Stays</p>
+        <p>Flights</p>
+        <p>car rentals</p>
+        <p>Attractions</p>
+        <p>Airport taxis</p>
+    </div>
+    <div class="main">
+        <div class="txt"><b>Sign in, save money</b> <br>Save 10% or more at participating properties – just look for the blue Genius label.
+        <br><button>sign in or Register</button>
+    </div>
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WwPqwEGzlK0okaQVviWEAwyFH16ZTbFYAq8rBy2o17atV2dsPCNlTP8K2Uvgb7qBX_Q&usqp=CAU" alt="">
+        </div>
     </div>
 
+   </div>
 </body>
 </html>

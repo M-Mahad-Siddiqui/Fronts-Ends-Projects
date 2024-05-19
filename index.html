@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>My Frontend Projects</title>
+    <style>
+        body {
+    background-color: #e0f7fa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #00796b;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects span {
+    border: 2px solid #00acc1;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 12rem;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.projects a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #00acc1;
+    transition: color 0.3s;
+}
+
+.projects span:hover {
+    background-color: #b2ebf2;
+    box-shadow: 0 5px 15px rgba(0, 150, 136, 0.2);
+    transform: scale(1.05);
+}
+
+.projects a:hover {
+    color: #004d40;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .projects span {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Frontend Projects</h1>
+        <div class="projects">
+            <span><a href="Booking WebSites/index.html">Booking Websites</a></span>
+            <span><a href="ESTY/index.html">Esty Websites</a></span>
+            <span><a href="Figma/index.html">Figma Websites</a></span>
+            <span><a href="nav and card/index.html">Navbar and Card</a></span>
+            <span><a href="portfolio/index.html">Portfolios</a></span>
+            <span><a href="Simples Tasks/FontsAwesome.html">FontsAwesome</a></span>
+            <span><a href="Simples Tasks/sidebar.html">sidebar</a></span>
+            <span><a href="Simples Tasks/TravelWebsites.html">Travel Websites</a></span>
+            <span><a href="Simples Tasks/mahadFB.html">Fb Login</a></span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FB login Page</title>
+    <style>
+      body {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+      #text {
+        margin: 0px 100px 100px 0px; /*50px 0 Top and bottom margin reduced to 50px */
+        text-align: left;
+      }
+      h1 {
+        color: blue;
+        font-size: 100px;
+        margin: 0; /* Remove default margin for h1 */
+      }
+      #text > p {
+        font-size: 30px;
+        margin: 0; /* Remove default margin for p */
+      }
+      #div1 {
+        text-align: center;
+        margin: 130px 30px 0px 50px;
+      }
+      #div1 > p {
+        font-size: 22px;
+        margin-top: 40px;
+      }
+      form {
+        display: block;
+        background-color: white;
+        box-shadow: 1px 1px 10px 10px rgba(14, 0, 0, 0.2);
+        justify-content: center;
+        text-align: center;
+        padding: 10px 7px 20px 7px;
+        border-radius: 9px;
+      }
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        font-size: 22px;
+        padding: 15px 200px 15px 20px;
+        margin: 20px 20px 20px 15px;
+        border-radius: 7px;
+        border: none;
+        box-shadow: 1px 1px 10px 1px rgba(14, 0, 0, 0.1);
+      }
+      #btn1 {
+        display: block;
+        margin: 20px 20px 20px 15px;
+        padding: 10px 200px 12px 200px;
+        font-size: 30px;
+        font-weight: bolder;
+        color: white;
+        background-color: blue;
+        border-radius: 7px;
+        border: none;
+      }
+      #btn2 {
+        display: block;
+        margin: 20px 20px 20px 15px;
+        padding: 8px 110px 8px 118px;
+        font-size: 25px;
+        color: blue;
+        background-color: white;
+        border-radius: 7px;
+        border: none;
+        border-bottom: gray 1px solid;
+      }
+      #btn3 {
+        display: block;
+        margin: 20px 20px 20px 15px;
+        padding: 10px 25px 10px 25px;
+        font-size: 25px;
+        font-weight: bolder;
+        color: white;
+        background-color: rgb(9, 205, 9);
+        border-radius: 7px;
+        border: none;
+        margin: 40px 0px 1px 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text">
+      <h1>facebook</h1>
+      <p>
+        Facebook helps you connect and share <br />with the people in your life
+      </p>
+    </div>
+    <div id="div1">
+      <form>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email address or phone number"
+        />
+        <input type="password" id="password" placeholder="Password" />
+        <input type="button" value="Log in" id="btn1" />
+        <input type="button" value="Forgotten password?" id="btn2" />
+        <input type="button" value="Create new acount" id="btn3" />
+        <br />
+      </form>
+      <p><b>Create a Page</b> for a celebrity, brand or business</p>
+    </div>
+  </body>
+</html>

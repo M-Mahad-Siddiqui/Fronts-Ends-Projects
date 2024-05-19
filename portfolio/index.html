@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgba(179, 227, 233, 0.849);
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        flex-wrap: wrap;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: rgb(32, 181, 235);
+    }
+
+    span {
+        border: 2px solid rgb(53, 230, 218);
+        ;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 10rem;
+        padding: 10px 12px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s ease;
+        transform: scale(1);
+    }
+
+    span:hover {
+        background-color: rgb(206, 210, 229);
+        box-shadow: 0 0 1rem rgb(9, 205, 123);
+        transform: scale(1.1);
+    }
+
+    a:hover {
+        color: white;
+    }
+
+
+    @media (max-width: 768px) {
+        div {
+            flex-direction: column;
+        }
+
+        span {
+            margin: 12px 10px;
+            width: 93%;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 1rem rgb(41, 219, 175);
+        }
+
+        span:hover {
+            transform: scale(1.05);
+            border: none;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <span><a href="animated-head-portfolio-main/index.html">Porfolio 1</a></span>
+        <span><a href="html-css-js-portfolio-tutorial-2-main/index.html">Porfolio 2</a></span>
+        <span><a href="Mahad Portfolio/index.html">Porfolio 3</a></span>
+        <span><a href="nice portfolio/new.html">Porfolio 4</a></span>
+        <span><a href="Portfolio Website/index.html">Porfolio 5</a></span>
+        <span><a href="snake-game-js-main/index.html">snakes Game</a></span>
+    </div>
+</body>
+
+</html>
