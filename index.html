@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -98,6 +98,325 @@ h1 {
             <span><a href="Simples Tasks/mahadFB.html">Fb Login</a></span>
         </div>
     </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Frontend Projects Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+          rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #007bff;
+            --dark-bg-color: #1f242d;
+            --dark-text-color: #fff;
+            --light-bg-color: #f7f7f7;
+            --light-text-color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+        }
+
+        .home img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: var(--primary-color);
+        }
+
+        .card-description {
+            font-size: 1rem;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .dark-mode-toggle input {
+            display: none;
+        }
+
+        .dark-mode-toggle label {
+            background-color: #ccc;
+            width: 50px;
+            height: 25px;
+            border-radius: 25px;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+
+        .dark-mode-toggle label::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 2.5px;
+            left: 2.5px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode-toggle input:checked+label {
+            background-color: var(--secondary-color);
+        }
+
+        .dark-mode-toggle input:checked+label::after {
+            transform: translateX(25px);
+        }
+
+        .dark-mode {
+            background-color: var(--dark-bg-color);
+            color: var(--dark-text-color);
+        }
+
+        .dark-mode .home {
+            background-color: var(--dark-bg-color);
+        }
+
+        .dark-mode .card {
+            background-color: #333;
+            color: var(--dark-text-color);
+        }
+
+        .dark-mode .card-title {
+            color: var(--primary-color);
+        }
+
+        .dark-mode .card-description {
+            color: #bbb;
+        }
+
+        .dark-mode .card-link {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Frontend Projects Showcase</h1>
+        <div class="dark-mode-toggle">
+            <input type="checkbox"
+                   id="darkModeSwitch"
+                   onclick="toggleDarkMode()">
+            <label for="darkModeSwitch"></label>
+        </div>
+    </header>
+
+    <section class="home">
+        <img src="mahad.png"
+             alt="Muhammad Mahad Siddiqui">
+        <h1>Hello, I'm <span>Muhammad Mahad Siddiqui</span></h1>
+        <p>Welcome to my frontend projects showcase. Here are some of my works:</p>
+        <div class="typing"></div>
+    </section>
+
+    <div class="container"
+         id="projectContainer">
+        <!-- Project cards will be inserted here by JavaScript -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const projects = [
+            {
+                img: "Booking WebSites/pic.png",
+                title: "Booking Websites",
+                description: "Explore a range of booking websites designed to streamline online reservations.",
+                link: "Booking WebSites/index.html"
+            },
+            {
+                img: "ESTY/pic.png",
+                title: "Esty Websites",
+                description: "A collection of websites designed to mimic the popular e-commerce platform, Etsy.",
+                link: "ESTY/index.html"
+            },
+            {
+                img: "Figma/pic.png",
+                title: "Figma Websites",
+                description: "Projects designed using Figma for creating intuitive and user-friendly interfaces.",
+                link: "Figma/index.html"
+            },
+            {
+                img: "nav and card/pic.png",
+                title: "Navbar and Card",
+                description: "Various designs of navigation bars and cards for modern web applications.",
+                link: "nav and card/index.html"
+            },
+            {
+                img: "portfolio/pic.png",
+                title: "Portfolios",
+                description: "Elegant and professional portfolio websites to showcase personal projects and skills.",
+                link: "portfolio/index.html"
+            },
+            {
+                img: "Simples Tasks/FontsAwesome.png",
+                title: "FontsAwesome",
+                description: "Simple tasks demonstrating the use of Font Awesome icons in web projects.",
+                link: "Simples Tasks/FontsAwesome.html"
+            },
+            {
+                img: "Simples Tasks/sidebar.png",
+                title: "Sidebar",
+                description: "Creative sidebar designs for enhancing web navigation.",
+                link: "Simples Tasks/sidebar.html"
+            },
+            {
+                img: "Simples Tasks/TravelWebsites.png",
+                title: "Travel Websites",
+                description: "Beautiful travel websites to inspire and assist travelers.",
+                link: "Simples Tasks/TravelWebsites.html"
+            },
+            {
+                img: "Simples Tasks/mahadFB.png",
+                title: "FB Login",
+                description: "Facebook login integration for seamless user authentication.",
+                link: "Simples Tasks/mahadFB.html"
+            }
+        ];
+
+        const container = document.getElementById('projectContainer');
+
+        projects.forEach(project => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+
+            card.innerHTML = `
+                <img src="${project.img}" alt="${project.title}">
+                <div class="card-content">
+                    <h3 class="card-title">${project.title}</h3>
+                    <p class="card-description">${project.description}</p>
+                    <a href="${project.link}" class="card-link">View Project</a>
+                </div>
+            `;
+
+            container.appendChild(card);
+        });
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        var typed = new Typed(".typing", {
+            strings: ["Projects", "Assignments", "Works"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            backDelay: 1000,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
